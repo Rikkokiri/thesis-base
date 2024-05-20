@@ -3,6 +3,7 @@ import "./RadioRange.css";
 interface RadioOption {
   value: number;
   label: string;
+  optionClassName?: string;
 }
 
 interface RadioRangeProps {
@@ -16,10 +17,11 @@ export const RadioRange = (props: RadioRangeProps) => {
     <div className="radio-range">
       {props.options.map((option, index) => {
         const isChecked = props.value == option.value;
+        const optionClass = option.optionClassName ?? "";
 
         return (
           <div
-            className="radio-range__option"
+            className={`radio-range__option ${optionClass}`}
             key={`radio-option-${option.value}`}
           >
             <input
@@ -30,7 +32,7 @@ export const RadioRange = (props: RadioRangeProps) => {
               checked={isChecked}
               onChange={() => props.onChange(option.value)}
             />
-            {isChecked && <div className="option__indicator"></div>}
+            {isChecked && <div className={`option__indicator`}></div>}
             <label key={index}>{option.label}</label>
           </div>
         );

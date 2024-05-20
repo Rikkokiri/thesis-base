@@ -6,6 +6,11 @@
     "strongDisagree": "Completely disagree"
   },
   "appName": "Vaalikone",
+  "candidate": {
+    "answers": "Candidate's answers",
+    "backgroundInfo": "Candidate's infromation",
+    "electionPromises": "Election promises"
+  },
   "candidates": "Candidates",
   "electionName": "2024 Component Library Election",
   "frontPage": {

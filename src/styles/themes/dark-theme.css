@@ -1,6 +1,38 @@
-:root {
-  --text-primary: rgb(248, 249, 250);
+.dark-theme {
+  --primary: var(--gray-5);
+  --text-primary: var(--gray-5);
+  --text-negative: var(--blue-black);
+  --heading-primary: #fff;
+  --bg-primary: #000;
+  --focus-outline-primary: var(--gray-5);
+
+  --toolbar-bg: var(--blue-black);
+  --footer-bg: var(--gray-90);
+  --page-header-bg: var(--blue-black);
+
+  /* Button colors */
+  --button-solid-bg: var(--gray-5);
+  --button-solid-bg-hover: var(--white-71);
+  --button-outline: var(--gray-5);
+  --button-outline-hover: var(--white-17);
+  --button-solid-hover: var(--black-70);
+  --button-toggled-bg: var(--white-17);
 
   /* Radio buttons */
-  --radio-background: rgb(74, 79, 84);
+  --radio-button-agree: var(--success);
+  --radio-button-disagree: var(--error);
+  --radio-background: var(--gray-60);
+  --radio-agree: var(--green-bright);
+  --radio-disagree: var(--live-red);
+
+  /* Cards */
+  --card-bg: var(--blue-black);
+  --section-card-header-border: 1px solid var(--gray-60); /* rgb(74, 79, 84) */
+  --tag-bg: var(--gray-5);
+  --tag-text: var(--text-negative);
+
+  /* Candidate answers */
+  --candidate-comment-bg: rgb(31, 33, 35);
+  --candidate-answer-number-bg: var(--gray-5);
+  --candidate-img-placeholder: var(--gray-10);
 }

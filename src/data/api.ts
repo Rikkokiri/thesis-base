@@ -1,3 +1,5 @@
+import { CANDIDATE_ANSWERS, SingleCandidateAnswers } from "./candidateAnswers";
+import { Candidate, CANDIDATES } from "./candidates";
 import { CATEGORIES, QUESTIONS } from "./questionsData";
 import { CategoryWithQuestions } from "./types";
 
@@ -34,4 +36,18 @@ export const getCategoriesWithQuestions = (): CategoryWithQuestions[] => {
 
 export const getQuestionsTotalCount = () => {
   return QUESTIONS.length;
+};
+
+/**
+ * Candidate data
+ */
+
+export const getCandidatesAnswersById = (
+  candidateId: string,
+): SingleCandidateAnswers => {
+  return CANDIDATE_ANSWERS[candidateId];
+};
+
+export const getCandidateById = (id: string): Candidate | undefined => {
+  return CANDIDATES.find((c) => c.id === id);
 };

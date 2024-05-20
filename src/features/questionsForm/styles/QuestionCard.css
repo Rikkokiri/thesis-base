@@ -9,11 +9,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white; /* TODO: Use a variable */
+  background-color: var(--card-bg);
   margin-bottom: 1.5rem;
-  padding: 5rem 1.5rem;
-  /* TODO: Use variable */
-  border-radius: 4px;
+  padding: 5rem 1.5rem; /* TODO: Use variable */
+  border-radius: var(--border-radius-sm);
   max-width: 680px;
 }
 

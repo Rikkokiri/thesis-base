@@ -13,7 +13,7 @@
   content: " ";
   height: 0.25rem;
   width: calc(100% - 2rem);
-  background-color: #d8d9db;
+  background-color: var(--radio-background);
   position: absolute;
   top: calc(2rem / 2 - 0.25rem / 2);
   left: 1rem;
@@ -51,7 +51,7 @@
   border-radius: 50%;
   height: 2rem;
   width: 2rem;
-  background-color: #d8d9db;
+  background-color: var(--radio-background);
   margin: 0;
 }
 
@@ -63,27 +63,21 @@
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
-  background-color: #d8d9db;
+  background-color: var(--radio-background);
 }
-
-/* .option__indicator {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  margin: 0.25rem;
-  background-color: red;
-} */
-
-/* input:not(:checked)+.option__indicator {
-  background-color: #d8d9db;
-} */
 
 input:checked + .option__indicator {
   animation-name: scale-option;
   animation-duration: 0.3s;
   animation-iteration-count: 1;
   transition: background-color 0.3s ease 0s;
-  background-color: #d72a56;
-  outline: 0.25rem solid #d8d9db;
+  outline: 0.25rem solid var(--radio-background);
+}
+
+.disagree .option__indicator {
+  background-color: var(--radio-disagree);
+}
+
+.agree .option__indicator {
+  background-color: var(--radio-agree);
 }
