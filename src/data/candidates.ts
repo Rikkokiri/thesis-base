@@ -8,7 +8,9 @@ export type ExternalLink = {
 export type Candidate = {
   id: string;
   name: string;
+  candidateNumber?: number;
   creator: string;
+  organization?: string;
   numberOfComponents?: number;
   website?: string;
   github?: string;

@@ -1,6 +1,8 @@
 .page-header {
-  padding: var(--spacing-2);
+  padding: 24px;
   text-align: center;
+  background-color: var(--page-header-bg);
+  width: 100%;
 }
 
 .page-header_title {

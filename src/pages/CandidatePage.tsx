@@ -1,9 +1,8 @@
 import { getCandidateById } from "@data/api";
 import { useParams } from "react-router-dom";
-import { useLocalizedString } from "@hooks/useLocalizedString";
 import { useTranslation } from "react-i18next";
 import { SectionCard } from "@components/SectionCard.tsx/SectionCard";
-import CandidateInfo from "src/features/candidateInfo";
+import CandidateInfo, { CandidateHeader } from "src/features/candidateInfo";
 
 export const CandidatePage = () => {
   const { id } = useParams<{ id: string }>();
@@ -15,12 +14,14 @@ export const CandidatePage = () => {
   }
 
   return (
-    <div className="page-sections__column">
-      <h1>Candidate: {candidate.name}</h1>
-      <CandidateInfo candidateId={candidate.id} />
-      <SectionCard title={t("candidate.answers")}>
-        <p>Candidate's answers</p>
-      </SectionCard>
-    </div>
+    <>
+      <CandidateHeader candidateId={candidate.id} />
+      <div className="page-sections__column">
+        <CandidateInfo candidateId={candidate.id} />
+        <SectionCard title={t("candidate.answers")}>
+          <p>Candidate's answers</p>
+        </SectionCard>
+      </div>
+    </>
   );
 };

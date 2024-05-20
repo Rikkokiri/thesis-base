@@ -1,11 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "../styles/QuestionCard.css";
 import { useTranslation } from "react-i18next";
 import { ToggleButton } from "../../../components/ToggleButton/ToggleButton";
-import { RiThumbUpLine } from "react-icons/ri";
-import { RiThumbUpFill } from "react-icons/ri";
-import { RiThumbDownLine } from "react-icons/ri";
-import { RiThumbDownFill } from "react-icons/ri";
 import { FiInfo } from "react-icons/fi";
 import { FiEyeOff } from "react-icons/fi";
 import { Tag } from "../../../components/Tag/Tag";

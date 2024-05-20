@@ -6,6 +6,12 @@
   height: 72px; /* TODO: Responsive height, use variable */
   box-shadow: var(--black-15) 0px 0px 7px 0px;
   background-color: var(--toolbar-bg);
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border-bottom: 1px solid #fff;
 }
 
 .toolbar__nav {
@@ -16,10 +22,32 @@
   flex-direction: row;
   justify-self: space-between;
   align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  /* margin-left: 24px;
+  margin-right: 24px; */
+}
+
+.toolbar__nav a {
+  text-decoration: none;
 }
 
 .toolbar__list {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+}
+
+.toolbar__logo__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.toolbar__logo {
+  height: 40px;
+  width: 40px;
+  background-color: var(--yle-logo);
+  border-radius: 2px;
 }
