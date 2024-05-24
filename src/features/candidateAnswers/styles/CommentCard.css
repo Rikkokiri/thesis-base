@@ -1,0 +1,25 @@
+.comment-card {
+  max-width: 343px; /* TODO: Use variables */
+  position: relative;
+  background-color: var(--candidate-comment-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 8px 16px 16px; /* TODO: Use variables */
+  margin: 12px 10px 0 10px;
+  font-size: 14px;
+}
+
+.comment-card__header {
+  font-weight: 700;
+}
+
+/* Comment "arrow" */
+.comment-card__arrow {
+  position: absolute;
+  transform: rotate(45deg);
+  top: -6px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--candidate-comment-bg);
+}

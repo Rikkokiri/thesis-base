@@ -2,7 +2,7 @@ import { LocalizedString } from "./types";
 
 export type ExternalLink = {
   url: string;
-  text: LocalizedString;
+  text?: LocalizedString;
 };
 
 export type Candidate = {
@@ -12,8 +12,8 @@ export type Candidate = {
   creator: string;
   organization?: string;
   numberOfComponents?: number;
-  website?: string;
-  github?: string;
+  website?: ExternalLink;
+  github?: ExternalLink;
   promises?: LocalizedString[];
   // TODO: Release date
   // TODO: Current version
@@ -24,16 +24,24 @@ const AntDesign: Candidate = {
   id: "ant",
   name: "Ant Design",
   creator: "Ant Financial",
-  website: "https://ant.design/",
-  github: "https://github.com/ant-design/ant-design",
+  website: {
+    url: "https://ant.design/",
+  },
+  github: {
+    url: "https://github.com/ant-design/ant-design",
+  },
 };
 
 const ChakraUI: Candidate = {
   id: "chakra",
   name: "Chakra UI",
   creator: "Segun Adebayo",
-  website: "https://v2.chakra-ui.com/",
-  github: "https://github.com/chakra-ui/chakra-ui",
+  website: {
+    url: "https://v2.chakra-ui.com/",
+  },
+  github: {
+    url: "https://github.com/chakra-ui/chakra-ui",
+  },
   promises: [
     {
       en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -50,8 +58,12 @@ const Mantine: Candidate = {
   id: "mantine",
   name: "Mantine",
   creator: "Vitaly Rtishchev",
-  website: "https://mantine.dev/",
-  github: "https://github.com/mantinedev/mantine",
+  website: {
+    url: "https://mantine.dev/",
+  },
+  github: {
+    url: "https://github.com/mantinedev/mantine",
+  },
   promises: [
     {
       en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -68,8 +80,12 @@ const shadcnui: Candidate = {
   id: "shadcnui",
   name: "shadcn/ui",
   creator: "shadcn",
-  website: "https://ui.shadcn.com/",
-  github: "https://github.com/shadcn-ui/ui",
+  website: {
+    url: "https://ui.shadcn.com/",
+  },
+  github: {
+    url: "https://github.com/shadcn-ui/ui",
+  },
   promises: [],
 };
 

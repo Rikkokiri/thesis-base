@@ -1,5 +1,12 @@
+import { Candidate } from "@data/candidates";
+import { AnswerList } from "./components/AnswerList";
+import { useCandidateAnswers } from "./hooks/useCandidateAnswers";
+
 interface ICandidateAnswersProps {
-  candidateId: string;
+  candidate: Candidate;
 }
 
-export const CandidateAnswers = (props: ICandidateAnswersProps) => {};
+export const CandidateAnswers = (props: ICandidateAnswersProps) => {
+  const candidateAnswersLogic = useCandidateAnswers(props.candidate);
+  return <AnswerList {...candidateAnswersLogic} />;
+};

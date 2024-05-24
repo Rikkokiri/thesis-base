@@ -8,14 +8,14 @@ import { ToggleButton } from "@components/ToggleButton/ToggleButton";
 const YES = 5;
 const NO = 1;
 
-interface YesNoAnswerProps {
+interface YesNoQuestionProps {
   t: TFunction;
   questionId: number;
   answerQuestion: (questionId: number, answer: number) => void;
   answer: number | null;
 }
 
-export const YesNoAnswer = (props: YesNoAnswerProps) => {
+export const YesNoQuestion = (props: YesNoQuestionProps) => {
   const { answer, answerQuestion, questionId, t } = props;
 
   return (

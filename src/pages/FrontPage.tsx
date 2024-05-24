@@ -20,7 +20,7 @@ export const FrontPage = () => {
   return (
     <>
       <div className="page-header">
-        <h1 className="heading-1">{t("frontPage.title")}</h1>
+        <h1 className="heading-1 mb-16">{t("frontPage.title")}</h1>
         <Button iconAfter={<FiChevronRight />} onClick={startCompass}>
           {t("frontPage.start")}
         </Button>

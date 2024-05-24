@@ -15,6 +15,7 @@
   --button-solid-bg-hover: var(--white-71);
   --button-outline: var(--gray-5);
   --button-outline-hover: var(--white-17);
+  --button-outline-disabled: var(--white-21);
   --button-solid-hover: var(--black-70);
   --button-toggled-bg: var(--white-17);
 
@@ -28,11 +29,13 @@
   /* Cards */
   --card-bg: var(--blue-black);
   --section-card-header-border: 1px solid var(--gray-60); /* rgb(74, 79, 84) */
-  --tag-bg: var(--gray-5);
-  --tag-text: var(--text-negative);
+  --tag-default-bg: var(--gray-5);
+  --tag-default-text: var(--text-negative);
+  --tag-negative-bg: var(--gray-5);
+  --tag-negative-text: #000;
 
   /* Candidate answers */
-  --candidate-comment-bg: rgb(31, 33, 35);
+  --candidate-comment-bg: var(--gray-90);
   --candidate-answer-number-bg: var(--gray-5);
   --candidate-img-placeholder: var(--gray-10);
 }

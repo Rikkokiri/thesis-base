@@ -9,3 +9,10 @@
   width: 100%;
   max-width: 680px; /* TODO: Use variable, define globally for some page content wrapper? */
 }
+
+.row_centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

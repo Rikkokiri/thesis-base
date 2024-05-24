@@ -1,10 +1,9 @@
-.card {
+.answer-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--card-bg);
-  margin-bottom: 1.5rem;
-  padding: 5rem 1.5rem; /* TODO: Use variable */
+  padding: 24px; /* TODO: Use variable */
   border-radius: var(--border-radius-sm);
   max-width: 680px;
 }
@@ -13,29 +12,17 @@
   gap: 1.5rem; /* TODO: Use variable */
 }
 
-.category {
-  /* TODO: Define typography style? */
-  font-size: 0.75rem;
-  line-height: 1.125rem;
-  font-weight: 700;
-}
-
 .question {
   font-weight: 900;
   font-size: 24px;
-  max-width: 343px;
+  max-width: 343px; /* TODO: Use variable */
   text-align: center;
   margin: 20px 0;
 }
 
-.info-buttons {
-  margin-top: 6px;
-  margin-bottom: 18px;
-}
-
 .answer_buttons {
   gap: 24px; /* TODO: Use variable */
-  margin-top: 40px;
+  margin-top: 8px;
 }
 
 .answer_radio {

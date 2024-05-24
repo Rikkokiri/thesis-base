@@ -8,7 +8,7 @@ ol.promise-list {
   width: 24px;
   height: 24px;
   font-size: 12px;
-  background: var(--tag-bg);
+  background: var(--tag-default-bg);
   color: var(--text-negative);
   border-radius: 50%;
   display: flex;

@@ -10,6 +10,7 @@ interface RadioRangeProps {
   options: RadioOption[];
   value: number | undefined;
   onChange: (value: number) => void;
+  isReadonly?: boolean;
 }
 
 export const RadioRange = (props: RadioRangeProps) => {
@@ -31,6 +32,7 @@ export const RadioRange = (props: RadioRangeProps) => {
               value={option.value}
               checked={isChecked}
               onChange={() => props.onChange(option.value)}
+              readOnly={props.isReadonly}
             />
             {isChecked && <div className={`option__indicator`}></div>}
             <label key={index}>{option.label}</label>

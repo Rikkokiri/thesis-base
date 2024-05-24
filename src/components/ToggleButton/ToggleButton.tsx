@@ -6,6 +6,7 @@ type ToggleButtonVariant = Extract<ButtonVariant, "outline" | "ghost">;
 interface IToggleButtonProps {
   children?: React.ReactNode;
   isToggled: boolean;
+  isDisabled?: boolean;
   toggle: () => void;
   untoggledIcon?: JSX.Element;
   toggledIcon?: JSX.Element;
@@ -16,6 +17,7 @@ interface IToggleButtonProps {
 export const ToggleButton = ({
   children,
   isToggled,
+  isDisabled,
   toggle,
   untoggledIcon,
   toggledIcon,
@@ -29,6 +31,7 @@ export const ToggleButton = ({
       className={`toggle-button ${isToggled ? "toggled" : ""}`}
       variant={variant}
       size={size}
+      isDisabled={isDisabled}
     >
       {children}
     </Button>

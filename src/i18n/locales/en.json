@@ -6,12 +6,17 @@
     "strongDisagree": "Completely disagree"
   },
   "appName": "Vaalikone",
-  "candidate": {
+  "candidates": "Candidates",
+  "candidateDetails": {
+    "website": "Library website",
+    "creator": "Creator",
+    "github": "Github"
+  },
+  "candidateSections": {
     "answers": "Candidate's answers",
     "backgroundInfo": "Candidate's infromation",
     "electionPromises": "Election promises"
   },
-  "candidates": "Candidates",
   "electionName": "2024 Component Library Election",
   "frontPage": {
     "start": "Start",

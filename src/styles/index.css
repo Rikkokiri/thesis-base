@@ -1,5 +1,6 @@
 @import "./colors.css";
 @import "./variables.css";
+@import "./reset.css";
 @import "./typography.css";
 @import "./layout.css";
 @import "./utils.css";
@@ -7,6 +8,7 @@
 @import "./themes/dark-theme.css";
 
 :root {
+  /* TODO: Update font family */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;

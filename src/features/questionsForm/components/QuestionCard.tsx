@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "../styles/QuestionCard.css";
 import { useTranslation } from "react-i18next";
 import { ToggleButton } from "../../../components/ToggleButton/ToggleButton";
@@ -7,8 +6,8 @@ import { FiEyeOff } from "react-icons/fi";
 import { Tag } from "../../../components/Tag/Tag";
 import { Category, Question } from "@data/types";
 import { Answer } from "@stores/answerStore";
-import { RadioAnswer } from "./RadioAnswer";
-import { YesNoAnswer } from "./YesNoAnswer";
+import { RadioQuestion } from "./RadioQuestion";
+import { YesNoQuestion } from "./YesNoQuestion";
 
 interface ICardProps {
   category: Category;
@@ -31,10 +30,6 @@ export const QuestionCard = (props: ICardProps) => {
   const { t } = useTranslation();
   const questionId = question.id;
   const questionNumber = category.position + question.position + 1;
-
-  useEffect(() => {
-    console.log("Answer changed to: ", answer);
-  }, [answer]);
 
   return (
     <section className="card">
@@ -67,14 +62,14 @@ export const QuestionCard = (props: ICardProps) => {
         </ToggleButton>
       </div>
       {question.questionType === "yes-no" ? (
-        <YesNoAnswer
+        <YesNoQuestion
           answerQuestion={answerQuestion}
           questionId={questionId}
           t={t}
           answer={answer?.answer ?? null}
         />
       ) : (
-        <RadioAnswer
+        <RadioQuestion
           questionId={questionId}
           answerQuestion={answerQuestion}
           t={t}

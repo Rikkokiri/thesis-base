@@ -1,0 +1,7 @@
+.answer-list .section-card__content {
+  padding: 0;
+}
+
+.answer-list .answer-card {
+  border-bottom: 1px solid var(--bg-primary);
+}

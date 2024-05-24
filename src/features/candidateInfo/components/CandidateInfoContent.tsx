@@ -11,13 +11,13 @@ export const CandidateInfoContent = (
   return (
     <>
       {promises && (
-        <SectionCard title={t("candidate.electionPromises")}>
+        <SectionCard title={t("candidateSections.electionPromises")}>
           <PromiseList items={promises} />
         </SectionCard>
       )}
-      {candidate !== undefined && (
-        <SectionCard title={t("candidate.backgroundInfo")}>
-          <BackgroundDetailsGrid candidate={candidate} />
+      {candidate && (
+        <SectionCard title={t("candidateSections.backgroundInfo")}>
+          <BackgroundDetailsGrid t={t} candidate={candidate} />
         </SectionCard>
       )}
     </>

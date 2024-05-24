@@ -5,11 +5,10 @@ interface RadioAnswerProps {
   t: TFunction;
   value: number | null;
   questionId: number;
-  answerQuestion: (questionId: number, answer: number) => void;
 }
 
 export const RadioAnswer = (props: RadioAnswerProps) => {
-  const { t, value, questionId, answerQuestion } = props;
+  const { t, value, questionId } = props;
 
   return (
     <div className="row_centered answer_radio">
@@ -33,7 +32,7 @@ export const RadioAnswer = (props: RadioAnswerProps) => {
           },
         ]}
         value={value ?? undefined}
-        onChange={(value) => answerQuestion(questionId, value)}
+        onChange={() => {}}
       />
     </div>
   );
