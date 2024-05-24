@@ -4,7 +4,7 @@ import { AnswerCard } from "./AnswerCard";
 import { SectionCard } from "@components/SectionCard.tsx/SectionCard";
 
 export const AnswerList = (props: ReturnType<typeof useCandidateAnswers>) => {
-  const { t, questions, answers } = props;
+  const { t, questions, candidateAnswers } = props;
 
   return (
     <article className="answer-list">
@@ -13,7 +13,7 @@ export const AnswerList = (props: ReturnType<typeof useCandidateAnswers>) => {
           <AnswerCard
             key={question.id}
             question={question}
-            answer={answers[question.id]}
+            answer={candidateAnswers[question.id] ?? { answer: null }}
             questionsCount={questions.length}
           />
         ))}

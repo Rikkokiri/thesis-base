@@ -1,13 +1,19 @@
 .comment-card {
   max-width: 343px; /* TODO: Use variables */
+  width: 100%;
   position: relative;
   background-color: var(--candidate-comment-bg);
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 8px 16px 16px; /* TODO: Use variables */
-  margin: 12px 10px 0 10px;
+  border-radius: var(--border-radius-sm);
   font-size: 14px;
+  margin: 12px 10px 0 10px;
+}
+
+.comment-card.answer-scale {
+  margin-top: 28px;
 }
 
 .comment-card__header {

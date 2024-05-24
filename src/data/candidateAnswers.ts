@@ -4,7 +4,7 @@ import { LocalizedString } from "./types";
 export type CandidateAnswer = {
   /* candidateId: string; */
   /* questionId: number; */
-  answer: number;
+  answer?: number;
   comment?: LocalizedString;
 };
 
@@ -46,13 +46,24 @@ const CHAKRA_ANSWERS: SingleCandidateAnswers = {
 
 const MANTINE_ANSWERS: SingleCandidateAnswers = {
   1: {
-    answer: 1,
+    answer: undefined,
+    comment: {
+      en: "I did not want to answer but will still comment",
+      fi: "En halunnut vastata mutta kommentoin silti",
+    },
   },
   2: {
     answer: 1,
   },
   3: {
     answer: 1,
+  },
+  4: {
+    answer: 4,
+    comment: {
+      en: "Test comment",
+      fi: "",
+    },
   },
 };
 

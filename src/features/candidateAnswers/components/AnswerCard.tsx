@@ -48,7 +48,7 @@ export const AnswerCard = (props: ICardProps) => {
           header={"Candidate name"} // TODO: Pass candidate's name
           body={candidateComment}
           questionType={question.questionType}
-          answer={answer.answer}
+          answer={answer?.answer}
         />
       )}
     </section>

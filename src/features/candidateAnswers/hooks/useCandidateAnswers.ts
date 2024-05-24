@@ -13,6 +13,6 @@ export const useCandidateAnswers = (candidate: Candidate) => {
     t,
     questions,
     candidateName: candidate.name,
-    answers: candidateAnswers,
+    candidateAnswers,
   };
 };
