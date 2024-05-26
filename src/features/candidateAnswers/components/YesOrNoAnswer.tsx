@@ -22,9 +22,6 @@ type AnswerOption = {
 
 export const YesOrNoAnswer = (props: YesNoAnswerProps) => {
   const { t, userAnswer, candidateAnswer, candidateImgSrc } = props;
-
-  // TODO: background color: black-09 on light mode for selected button
-
   const options: AnswerOption[] = [
     {
       value: YesNoAnswer.YES,
@@ -66,7 +63,7 @@ export const YesOrNoAnswer = (props: YesNoAnswerProps) => {
             </ToggleButton>
             {userAnswer === option.value && (
               <SmallSpeechBubble
-                content="Oma vastauksesi"
+                content={t("question.yourAnswer")}
                 answer={userAnswer}
                 questionType={QuestionType.YES_NO}
                 className="user-answer-bubble"
@@ -78,26 +75,3 @@ export const YesOrNoAnswer = (props: YesNoAnswerProps) => {
     </div>
   );
 };
-
-{
-  /*
-      <div className="yes-or-no-answer__option">
-        <Button
-          variant="outline"
-          isDisabled
-          // {answer === NO}
-          
-          iconBefore={<RiThumbDownLine />}
-        >
-          {t("question.no")}
-        </Button>
-        {userAnswer === YesNoAnswer.NO && (
-          <SmallSpeechBubble
-            content="Oma vastauksesi"
-            answer={userAnswer}
-            questionType={QuestionType.YES_NO}
-            className="user-answer-bubble"
-          />
-        )}
-      </div>*/
-}

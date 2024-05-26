@@ -41,4 +41,6 @@
   --candidate-answer-number-bg: var(--gray-5);
   --candidate-img-placeholder: var(--gray-10);
   --user-answer-bubble-text: var(--gray-5);
+
+  --separator: var(--gray-30);
 }

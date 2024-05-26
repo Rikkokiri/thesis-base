@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+.p-24 {
+  padding: 24px;
+}
+
 .py-24 {
   padding-top: 24px;
   padding-bottom: 24px;

@@ -42,7 +42,6 @@ export const QuestionCard = (props: ICardProps) => {
         {question.additionalInfo && (
           <ToggleButton
             isToggled={false}
-            toggle={() => {}}
             untoggledIcon={<FiInfo />}
             variant="ghost"
             size="small"
@@ -51,7 +50,7 @@ export const QuestionCard = (props: ICardProps) => {
           </ToggleButton>
         )}
         <ToggleButton
-          toggle={() => toggleQuestionHiding(question.id)}
+          onClick={() => toggleQuestionHiding(question.id)}
           isToggled={!!answer?.hideQuestion}
           untoggledIcon={<FiEyeOff />}
           toggledIcon={<FiEyeOff />}
