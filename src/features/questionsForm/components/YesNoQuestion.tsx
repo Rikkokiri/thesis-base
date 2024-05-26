@@ -20,7 +20,7 @@ export const YesNoQuestion = (props: YesNoQuestionProps) => {
     <div className="row_centered answer_buttons">
       <ToggleButton
         isToggled={answer === YesNoAnswer.YES}
-        toggle={() => answerQuestion(questionId, YesNoAnswer.YES)}
+        onClick={() => answerQuestion(questionId, YesNoAnswer.YES)}
         untoggledIcon={<RiThumbUpLine />}
         toggledIcon={<RiThumbUpFill />}
       >
@@ -28,7 +28,7 @@ export const YesNoQuestion = (props: YesNoQuestionProps) => {
       </ToggleButton>
       <ToggleButton
         isToggled={answer === YesNoAnswer.NO}
-        toggle={() => answerQuestion(questionId, YesNoAnswer.NO)}
+        onClick={() => answerQuestion(questionId, YesNoAnswer.NO)}
         untoggledIcon={<RiThumbDownLine />}
         toggledIcon={<RiThumbDownFill />}
       >

@@ -24,7 +24,7 @@ export type Candidate = {
 const AntDesign: Candidate = {
   id: "ant",
   name: "Ant Design",
-  logoSrc: "/public/logos/ant-logo.svg",
+  logoSrc: "/logos/ant-logo.svg",
   creator: "Ant Financial",
   website: {
     url: "https://ant.design/",
@@ -37,7 +37,7 @@ const AntDesign: Candidate = {
 const ChakraUI: Candidate = {
   id: "chakra",
   name: "Chakra UI",
-  logoSrc: "/public/logos/chakra.svg",
+  logoSrc: "/logos/chakra.svg",
   creator: "Segun Adebayo",
   website: {
     url: "https://v2.chakra-ui.com/",
@@ -60,7 +60,7 @@ const ChakraUI: Candidate = {
 const Mantine: Candidate = {
   id: "mantine",
   name: "Mantine",
-  logoSrc: "/public/logos/mantine-logo.svg",
+  logoSrc: "/logos/mantine-logo.svg",
   creator: "Vitaly Rtishchev",
   website: {
     url: "https://mantine.dev/",
@@ -83,7 +83,7 @@ const Mantine: Candidate = {
 const shadcnui: Candidate = {
   id: "shadcnui",
   name: "shadcn/ui",
-  logoSrc: "/public/logos/shadcn-logo.svg",
+  logoSrc: "/logos/shadcn-logo.svg",
   creator: "shadcn",
   website: {
     url: "https://ui.shadcn.com/",

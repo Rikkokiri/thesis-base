@@ -19,7 +19,7 @@ export const ToggleButton = ({
   toggledIcon,
   variant = "outline",
   size,
-  ...props
+  iconSize,
 }: IToggleButtonProps) => {
   return (
     <Button
@@ -29,7 +29,7 @@ export const ToggleButton = ({
       variant={variant}
       size={size}
       isDisabled={isDisabled}
-      {...props}
+      iconSize={iconSize}
     >
       {children}
     </Button>
