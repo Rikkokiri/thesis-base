@@ -22,8 +22,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-items: start;
+  place-items: center start;
   width: 2rem;
   text-align: center;
 }
@@ -62,10 +61,6 @@
   margin: 0;
 }
 
-.radio-range input[type="radio"].readonly {
-  cursor: not-allowed;
-}
-
 .option__indicator {
   cursor: pointer;
   position: absolute;
@@ -77,6 +72,14 @@
   background-color: var(--radio-background);
 }
 
+.disagree .option__indicator {
+  background-color: var(--disagree);
+}
+
+.agree .option__indicator {
+  background-color: var(--agree);
+}
+
 input:checked + .option__indicator {
   animation-name: scale-option;
   animation-duration: 0.3s;
@@ -85,10 +88,6 @@ input:checked + .option__indicator {
   outline: 0.25rem solid var(--radio-background);
 }
 
-.disagree .option__indicator {
-  background-color: var(--disagree);
-}
-
-.agree .option__indicator {
-  background-color: var(--agree);
+.radio-range input[type="radio"].readonly {
+  cursor: not-allowed;
 }

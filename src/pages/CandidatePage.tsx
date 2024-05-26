@@ -1,6 +1,6 @@
 import { getCandidateById } from "@data/api";
 import { useParams } from "react-router-dom";
-import CandidateInfo, { CandidateHeader } from "src/features/candidateInfo";
+import { CandidateInfo, CandidateHeader } from "src/features/candidateInfo";
 import { CandidateAnswers } from "src/features/candidateAnswers";
 
 export const CandidatePage = () => {

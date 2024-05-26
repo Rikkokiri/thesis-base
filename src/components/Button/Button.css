@@ -80,8 +80,8 @@
   color: var(--button-outline);
 }
 
-.button--outline:disabled:hover,
-.button--outline:hover {
+.button--outline:hover,
+.button--outline:disabled:hover {
   background-color: var(--button-outline-bg-hover);
   border: 2px solid var(--primary);
   outline: none;

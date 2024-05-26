@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   height: 72px; /* TODO: Responsive height, use variable */
-  box-shadow: var(--black-15) 0px 0px 7px 0px;
+  box-shadow: var(--black-15) 0 0 7px 0;
   background-color: var(--toolbar-bg);
   display: flex;
   align-items: center;
@@ -15,16 +15,12 @@
 
 .toolbar__nav {
   max-width: 1080px; /* TODO: Use variable? */
-
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
   justify-self: space-between;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  /* margin-left: 24px;
-  margin-right: 24px; */
 }
 
 .toolbar__nav a {
@@ -37,7 +33,7 @@
   list-style-type: none;
 }
 
-.toolbar__logo__wrapper {
+.toolbar__logo-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;

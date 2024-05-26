@@ -10,7 +10,7 @@ export const RadioAnswer = (props: RadioAnswerProps) => {
   const { t, value } = props;
 
   return (
-    <div className="row_centered answer_radio">
+    <div className="row-centered answer__radio">
       <RadioRange
         options={[
           {

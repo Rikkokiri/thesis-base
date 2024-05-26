@@ -18,7 +18,7 @@ ul.info-grid {
 }
 
 /* TODO: Define breakpoint variables */
-@media screen and (max-width: 620px) {
+@media (width <= 620px) {
   .info-grid__row {
     grid-template-columns: 1fr;
   }

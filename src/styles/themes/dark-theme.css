@@ -5,7 +5,6 @@
   --heading-primary: #fff;
   --bg-primary: #000;
   --focus-outline-primary: var(--gray-5);
-
   --toolbar-bg: var(--blue-black);
   --footer-bg: var(--gray-90);
   --page-header-bg: var(--blue-black);
@@ -40,6 +39,5 @@
   --candidate-answer-number-bg: var(--gray-5);
   --candidate-img-placeholder: var(--gray-10);
   --user-answer-bubble-text: var(--blue-black);
-
   --separator: var(--gray-60);
 }

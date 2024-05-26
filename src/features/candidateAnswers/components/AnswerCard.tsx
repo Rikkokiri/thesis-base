@@ -30,7 +30,7 @@ export const AnswerCard = (props: ICardProps) => {
 
   return (
     <section className="answer-card">
-      <div className="row_centered card_header">
+      <div className="row-centered card__header">
         <Tag variant="negative">{`${question.position}/${questionsCount}`}</Tag>
       </div>
       <h2 className="question">{question.question.en}</h2>

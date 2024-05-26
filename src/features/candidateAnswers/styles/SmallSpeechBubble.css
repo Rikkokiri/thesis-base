@@ -31,5 +31,5 @@
   bottom: calc(var(--tip-size) * -1 + 1px);
   left: 50%;
   transform: translateX(-50%);
-  clip-path: polygon(0px 0px, 50% 100%, 100% 0px);
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
 }

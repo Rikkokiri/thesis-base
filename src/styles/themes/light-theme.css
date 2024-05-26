@@ -1,12 +1,10 @@
 :root {
   --primary: var(--blue-black);
-
   --text-primary: var(--blue-black);
   --text-negative: #fff;
   --heading-primary: var(--dark-blue);
   --bg-primary: var(--gray-10);
   --focus-outline-primary: var(--blue-black);
-
   --toolbar-bg: #fff;
   --footer-bg: var(--gray-5);
   --page-header-bg: #fff;
@@ -41,6 +39,5 @@
   --candidate-answer-number-bg: var(--gray-5);
   --candidate-img-placeholder: var(--gray-10);
   --user-answer-bubble-text: var(--gray-5);
-
   --separator: var(--gray-30);
 }

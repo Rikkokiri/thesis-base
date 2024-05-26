@@ -29,7 +29,7 @@ export const AnswerList = (props: ReturnType<typeof useCandidateAnswers>) => {
           ))}
         </>
         <div className="separator"></div>
-        <div className="answer-list__expand p-24 row_centered">
+        <div className="answer-list__expand p-24 row-centered">
           <ToggleButton
             isToggled={isExpanded}
             onClick={() => setExpanded(!isExpanded)}

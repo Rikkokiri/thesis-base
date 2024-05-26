@@ -8,7 +8,7 @@
   max-width: 680px;
 }
 
-.card_header {
+.answer-card .card__header {
   gap: 1.5rem; /* TODO: Use variable */
 }
 
@@ -20,11 +20,11 @@
   margin: 20px 0;
 }
 
-.answer_buttons {
+.answer__buttons {
   gap: 24px; /* TODO: Use variable */
   margin-top: 8px;
 }
 
-.answer_radio {
+.answer__radio {
   padding-top: 8px; /* TODO: Use variable */
 }

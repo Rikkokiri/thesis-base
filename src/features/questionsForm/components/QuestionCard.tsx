@@ -33,12 +33,12 @@ export const QuestionCard = (props: ICardProps) => {
 
   return (
     <section className="card">
-      <div className="row_centered card_header">
+      <div className="row-centered card__header">
         <Tag>{`${questionNumber}/${questionsCount}`}</Tag>
         <p className="category">{category.name.en}</p>
       </div>
       <h2 className="question">{question.question.en}</h2>
-      <div className="row_centered info-buttons">
+      <div className="row-centered info-buttons">
         {question.additionalInfo && (
           <ToggleButton
             isToggled={false}

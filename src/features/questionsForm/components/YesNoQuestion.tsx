@@ -17,7 +17,7 @@ export const YesNoQuestion = (props: YesNoQuestionProps) => {
   const { answer, answerQuestion, questionId, t } = props;
 
   return (
-    <div className="row_centered answer_buttons">
+    <div className="row-centered answer__buttons">
       <ToggleButton
         isToggled={answer === YesNoAnswer.YES}
         onClick={() => answerQuestion(questionId, YesNoAnswer.YES)}
