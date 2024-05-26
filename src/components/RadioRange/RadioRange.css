@@ -61,7 +61,7 @@
   margin: 0;
 }
 
-.option__indicator {
+.radio-range .option__indicator {
   cursor: pointer;
   position: absolute;
   top: 0.25rem;
@@ -72,15 +72,15 @@
   background-color: var(--radio-background);
 }
 
-.disagree .option__indicator {
+.radio-range .disagree .option__indicator {
   background-color: var(--disagree);
 }
 
-.agree .option__indicator {
+.radio-range .agree .option__indicator {
   background-color: var(--agree);
 }
 
-input:checked + .option__indicator {
+.radio-range input:checked + .option__indicator {
   animation-name: scale-option;
   animation-duration: 0.3s;
   animation-iteration-count: 1;
@@ -88,6 +88,7 @@ input:checked + .option__indicator {
   outline: 0.25rem solid var(--radio-background);
 }
 
-.radio-range input[type="radio"].readonly {
+.radio-range input[type="radio"].readonly,
+.radio-range input[type="radio"].readonly + .option__indicator {
   cursor: not-allowed;
 }

@@ -23,7 +23,7 @@
 }
 
 .yes-or-no-answer__option .user-answer-bubble {
-  --bubble-padding: ;
+  --bubble-padding: 10px;
 
   position: absolute;
   bottom: calc(100% + var(--bubble-padding));

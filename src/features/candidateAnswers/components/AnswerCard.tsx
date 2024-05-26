@@ -43,7 +43,12 @@ export const AnswerCard = (props: ICardProps) => {
           candidateImgSrc={props.candidateImgSrc}
         />
       ) : (
-        <RadioAnswer t={t} value={candidateAnswer?.answer ?? null} />
+        <RadioAnswer
+          t={t}
+          candidateAnswer={candidateAnswer?.answer ?? null}
+          userAnswer={userAnswer?.answer ?? null}
+          candidateImgSrc={props.candidateImgSrc}
+        />
       )}
       {candidateComment && (
         <CommentCard

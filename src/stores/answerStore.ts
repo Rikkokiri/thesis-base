@@ -63,4 +63,4 @@ export const someAnswered = (): boolean => {
  * Get the answer for a question
  */
 export const getAnswerByQuestionId = (questionId: number): Answer | undefined =>
-  useAnswerStore((state) => state.answers[questionId] ?? undefined);
+  useAnswerStore((state) => state.answers[questionId] || undefined);

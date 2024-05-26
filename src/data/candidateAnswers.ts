@@ -59,7 +59,7 @@ const MANTINE_ANSWERS: SingleCandidateAnswers = {
     answer: 1,
   },
   4: {
-    answer: 4,
+    answer: 2,
     comment: {
       en: "Test comment",
       fi: "",

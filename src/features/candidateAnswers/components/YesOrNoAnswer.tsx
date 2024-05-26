@@ -5,7 +5,7 @@ import "../styles/YesOrNoAnswer.css";
 import { ToggleButton } from "@components/ToggleButton/ToggleButton";
 import { YesNoAnswer, QuestionType } from "@data/types";
 import { SmallSpeechBubble } from "./SmallSpeechBubble";
-import { CandidateIndicator } from "./CandidateImgIndicator";
+import { CandidateIndicator } from "./CandidateIndicator";
 
 interface YesNoAnswerProps {
   t: TFunction;
