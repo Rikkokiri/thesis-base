@@ -15,7 +15,7 @@ export const QuestionsPage = () => {
           {t("questionPage.findYourCandidate")}
         </h1>
         <p className="page-intro">{t("questionPage.description")}</p>
-        <Button onClick={() => {}} iconBefore={<FiArrowDown />}>
+        <Button iconBefore={<FiArrowDown />}>
           {t("questionPage.findYourCandidate")}
         </Button>
       </section>

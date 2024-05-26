@@ -32,7 +32,8 @@ export const RadioRange = (props: RadioRangeProps) => {
               value={option.value}
               checked={isChecked}
               onChange={() => props.onChange(option.value)}
-              readOnly={props.isReadonly}
+              readOnly={!!props.isReadonly}
+              className={props.isReadonly ? "readonly" : ""}
             />
             {isChecked && <div className={`option__indicator`}></div>}
             <label key={index}>{option.label}</label>

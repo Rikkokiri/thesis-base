@@ -21,10 +21,11 @@
 
   /* Radio buttons */
   --radio-button-agree: var(--success);
-  --radio-button-disagree: var(--error);
   --radio-background: var(--gray-60);
-  --radio-agree: var(--green-bright);
-  --radio-disagree: var(--live-red);
+
+  /* Agree and disagree bg colors */
+  --agree: var(--green-bright);
+  --disagree: var(--live-red);
 
   /* Cards */
   --card-bg: var(--blue-black);
@@ -38,4 +39,5 @@
   --candidate-comment-bg: var(--gray-90);
   --candidate-answer-number-bg: var(--gray-5);
   --candidate-img-placeholder: var(--gray-10);
+  --user-answer-bubble-text: var(--blue-black);
 }

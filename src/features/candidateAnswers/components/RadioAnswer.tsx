@@ -4,11 +4,10 @@ import { TFunction } from "i18next";
 interface RadioAnswerProps {
   t: TFunction;
   value: number | null;
-  questionId: number;
 }
 
 export const RadioAnswer = (props: RadioAnswerProps) => {
-  const { t, value, questionId } = props;
+  const { t, value } = props;
 
   return (
     <div className="row_centered answer_radio">
@@ -33,6 +32,7 @@ export const RadioAnswer = (props: RadioAnswerProps) => {
         ]}
         value={value ?? undefined}
         onChange={() => {}}
+        isReadonly
       />
     </div>
   );
