@@ -1,0 +1,47 @@
+.match-bar {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 76px; /* TODO: Use a variable */
+  width: 100%;
+  background-color: var(--toolbar-bg); /* TODO: Double check color */
+  box-shadow: rgba(0, 0, 0, 19%) 0 2px 4px 0; /* TODO: Use a variable */
+}
+
+.match-bar__matches {
+  max-width: 520px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  padding-top: 4px; /* TODO: Use a variable */
+}
+
+/**
+ * Placeholder styles
+ */
+.match-bar .placeholder-match {
+  justify-content: space-between;
+  height: 100%;
+  width: 32px;
+}
+
+.placeholder-candidate,
+.placeholder-score {
+  background-color: rgb(241, 242, 244); /* TODO: Use themed variable */
+  width: 100%; /* TODO: Use a variable */
+}
+
+.placeholder-candidate {
+  height: 63%;
+}
+
+.placeholder-score {
+  height: 33%;
+}

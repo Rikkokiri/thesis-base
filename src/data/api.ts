@@ -62,6 +62,10 @@ export const getCandidatesAnswersById = (
   return CANDIDATE_ANSWERS[candidateId];
 };
 
+export const getAllCandidates = () => {
+  return CANDIDATES;
+};
+
 export const getCandidateById = (id: string): Candidate | undefined => {
   return CANDIDATES.find((c) => c.id === id);
 };

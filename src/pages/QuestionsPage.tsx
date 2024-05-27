@@ -3,12 +3,14 @@ import "./QuestionsPage.css";
 import { Button } from "../components/Button/Button";
 import { FiArrowDown } from "react-icons/fi";
 import { QuestionForm } from "../features/questionsForm";
+import { CandidatesMatch } from "src/features/candidatesMatch";
 
 export const QuestionsPage = () => {
   const { t } = useTranslation();
 
   return (
     <>
+      <CandidatesMatch />
       <section className="question-page__header">
         <p className="subtitle m-0">{t("electionName")}</p>
         <h1 className="heading-1 pageheader_title">
