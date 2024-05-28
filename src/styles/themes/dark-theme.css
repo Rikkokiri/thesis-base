@@ -40,4 +40,7 @@
   --candidate-img-placeholder: var(--gray-10);
   --user-answer-bubble-text: var(--blue-black);
   --separator: var(--gray-60);
+
+  /* Match results */
+  --match-placeholder-bg: var(--gray-80);
 }

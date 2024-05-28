@@ -14,11 +14,19 @@
   border-radius: var(--border-radius-sm);
 }
 
+.match-result__img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .match-result__img {
-  border-radius: inherit;
+  border-radius: var(--border-radius-sm);
   flex-shrink: 0;
   width: 32px;
   height: 43px;
+  padding: 3px;
   background-color: rgb(241, 242, 244); /* TODO: Use a themed variable */
 }
 
@@ -28,4 +36,5 @@
   line-height: 150%;
   font-weight: 700;
   text-align: center;
+  color: var(--text-primary);
 }

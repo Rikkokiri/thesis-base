@@ -34,14 +34,15 @@
 
 .placeholder-candidate,
 .placeholder-score {
-  background-color: rgb(241, 242, 244); /* TODO: Use themed variable */
-  width: 100%; /* TODO: Use a variable */
+  background-color: var(--match-placeholder-bg);
+  width: 100%;
+  margin-bottom: 2px;
 }
 
 .placeholder-candidate {
-  height: 63%;
+  height: 34px; /* 63%; */
 }
 
 .placeholder-score {
-  height: 33%;
+  height: 18px; /* 33%; */
 }

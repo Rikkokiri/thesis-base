@@ -56,6 +56,11 @@ export const getQuestionsTotalCount = () => {
 /**
  * Candidate data
  */
+
+export const getAllCandidatesAnswers = () => {
+  return CANDIDATE_ANSWERS;
+};
+
 export const getCandidatesAnswersById = (
   candidateId: string,
 ): SingleCandidateAnswers => {

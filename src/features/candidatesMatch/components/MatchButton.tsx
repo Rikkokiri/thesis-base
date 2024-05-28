@@ -8,11 +8,14 @@ interface IMatchButtonProps {
 }
 
 export const MatchButton = (props: IMatchButtonProps) => {
+  const { candidateName, rank, percentage, imageSrc } = props;
+  const ariaLabel = `top ${rank} - ${candidateName} - ${props.percentage}% match`;
+
   return (
-    <button aria-label="top X - Candidate name" className="match-result">
+    <button aria-label={ariaLabel} className="match-result">
       <div className="match-result__img-wrapper">
-        <img src={props.imageSrc} aria-hidden className="match-result__img" />
-        <p className="match-result__score">{`${props.percentage}%`}</p>
+        <img src={imageSrc} aria-hidden className="match-result__img" />
+        <p className="match-result__score">{`${percentage}%`}</p>
       </div>
     </button>
   );

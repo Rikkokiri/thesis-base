@@ -37,7 +37,7 @@ const AntDesign: Candidate = {
 const ChakraUI: Candidate = {
   id: "chakra",
   name: "Chakra UI",
-  logoSrc: "/logos/chakra.svg",
+  logoSrc: "/logos/chakra-logo.svg",
   creator: "Segun Adebayo",
   website: {
     url: "https://v2.chakra-ui.com/",

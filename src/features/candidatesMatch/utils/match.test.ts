@@ -1,5 +1,6 @@
 import { expect, test, describe } from "vitest";
-import { answerMatchScore, AnswerValuesRecord, matchPercentage } from "./match";
+import { answerMatchScore, matchPercentage } from "./match";
+import { AnswerValuesRecord } from "../types";
 
 const ANSWER_VALUES = [1, 2, 4, 5];
 

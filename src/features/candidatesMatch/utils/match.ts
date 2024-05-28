@@ -1,6 +1,4 @@
-export type AnswerValuesRecord = Record<number, number | undefined>;
-
-export type AnsweredQuestionsRecord = Record<number, number | undefined>;
+import { AnswerValuesRecord } from "../types";
 
 /**
  * Match score for a single question (possible answer 1, 2, 4, and 5)
@@ -13,12 +11,11 @@ export const answerMatchScore = (answer1: number, answer: number): number => {
 
 /**
  * Calculate match percentage based on questions user has answered
- *
  * @param user
  * @param candidate
- * @returns 0 if no questions answered
- * @returns 1 if candidate has answered the same way to all the questions
- * that user has answered
+ * @returns a percentage (between 0 and 100). 0 if no questions answered.
+ *          100 if candidate has answered the same way to all the questions
+ *          that user has answered.
  */
 export const matchPercentage = (
   user: AnswerValuesRecord,
@@ -34,7 +31,6 @@ export const matchPercentage = (
   const matchScores = questionsUserAnswered.map((questionId) => {
     const userAnswer = user[questionId];
     const candidateAnswer = candidate[questionId];
-
     if (candidateAnswer == undefined) {
       return 0;
     }
@@ -43,6 +39,9 @@ export const matchPercentage = (
 
   const score =
     matchScores.reduce((acc, score) => acc + score, 0) / matchScores.length;
-  const roundedTwoDecimals = Math.round(score * 100) / 100;
-  return roundedTwoDecimals;
+  return roundToTwoDecimals(score);
+};
+
+const roundToTwoDecimals = (num: number) => {
+  return Math.trunc(Math.round(num * 100));
 };
