@@ -12,8 +12,14 @@
   box-shadow: rgba(0, 0, 0, 19%) 0 2px 4px 0; /* TODO: Use a variable */
 }
 
-.match-bar__matches {
+.match-bar__content {
   max-width: 520px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.match-bar__matches {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -40,9 +46,22 @@
 }
 
 .placeholder-candidate {
-  height: 34px; /* 63%; */
+  height: 34px;
 }
 
 .placeholder-score {
-  height: 18px; /* 33%; */
+  height: 18px;
+}
+
+/**
+* Match visibility toggle
+*/
+.button.match-bar__toggle {
+  border-radius: var(--border-radius-sm);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.match-bar__toggle.toggled-transparent {
+  background-color: transparent;
 }

@@ -15,22 +15,24 @@ export const CandidatesMatchBar = (
 
   return (
     <header className="match-bar">
-      <div className="match-bar__matches">
-        {resultsHidden || !topFourCandidates
-          ? [...Array(topCount).keys()].map((index) => (
-              <MatchPlaceholder key={index} />
-            ))
-          : topFourCandidates.map(
-              (candidate: MatchWithDetails, index: number) => (
-                <MatchButton
-                  rank={index + 1}
-                  key={candidate.id}
-                  candidateName={candidate.name}
-                  percentage={candidate.score}
-                  imageSrc={candidate.logoSrc}
-                />
-              ),
-            )}
+      <div className="match-bar__content">
+        <div className="match-bar__matches">
+          {resultsHidden || !topFourCandidates
+            ? [...Array(topCount).keys()].map((index) => (
+                <MatchPlaceholder key={index} />
+              ))
+            : topFourCandidates.map(
+                (candidate: MatchWithDetails, index: number) => (
+                  <MatchButton
+                    rank={index + 1}
+                    key={candidate.id}
+                    candidateName={candidate.name}
+                    percentage={candidate.score}
+                    imageSrc={candidate.logoSrc}
+                  />
+                ),
+              )}
+        </div>
         <ToggleButton
           isToggled={resultsHidden}
           onClick={() => setResultsHidden(!resultsHidden)}
@@ -38,6 +40,9 @@ export const CandidatesMatchBar = (
           toggledIcon={<FiEyeOff />}
           variant="ghost"
           size="medium"
+          iconSize={24}
+          className="match-bar__toggle"
+          toggledClassName="toggled-transparent"
         />
       </div>
     </header>
