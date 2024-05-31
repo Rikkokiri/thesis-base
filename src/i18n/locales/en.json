@@ -22,6 +22,9 @@
   "candidates": "Candidates",
   "closeModal": "Close modal",
   "electionName": "2024 Component Library Election",
+  "footer": {
+    "frontPageLink": "Front page"
+  },
   "frontPage": {
     "start": "Start",
     "subtitle": "The React component library election is on the way. Find out more about the candidates with the election compass.",

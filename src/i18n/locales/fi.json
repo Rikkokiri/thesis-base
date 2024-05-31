@@ -22,6 +22,9 @@
   "candidates": "Ehdokkaat",
   "closeModal": "Sulje modaali",
   "electionName": "2024 Komponenttikirjastovaalit",
+  "footer": {
+    "frontPageLink": "Vaalikoneen etusivu"
+  },
   "frontPage": {
     "start": "Aloita",
     "subtitle": "React-komponenttikirjastojen  vaalit ovat käynnissä. Tutustu ehdokkaisiin vaalikoneen avulla.",

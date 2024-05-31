@@ -31,7 +31,7 @@ body {
   height: 100%;
 }
 
-.main-wrapper {
+#main-wrapper {
   display: flex;
   flex-direction: column;
   height: calc(100% - var(--toolbar-height));
@@ -44,6 +44,31 @@ main {
   flex: 1 0 auto;
 }
 
+#app-footer {
+  background-color: var(--footer-bg);
+  width: 100%;
+  padding: 21px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 0%;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4px 16px; /* TODO: Use variables */
+  font-size: 14px;
+}
+
+.footer-links a {
+  padding: 12px 24px;
+  font-weight: 700;
+}
+
+/* TODO: Delete? */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
