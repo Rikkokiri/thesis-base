@@ -1,17 +1,15 @@
 import "../styles/MatchButton.css";
 import { useState } from "react";
 import { CandidateModal } from "./CandidateModal";
+import { MatchWithDetails } from "../types";
 
 interface IMatchButtonProps {
-  rank: number;
-  candidateName: string;
-  percentage: number;
-  imageSrc: string;
+  candidate: MatchWithDetails;
 }
 
 export const MatchButton = (props: IMatchButtonProps) => {
-  const { candidateName, rank, percentage, imageSrc } = props;
-  const ariaLabel = `top ${rank} - ${candidateName} - ${props.percentage}% match`;
+  const { name, rank, percentage, logoSrc } = props.candidate;
+  const ariaLabel = `top ${rank} - ${name} - ${percentage}% match`;
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -25,7 +23,7 @@ export const MatchButton = (props: IMatchButtonProps) => {
         }}
       >
         <div className="match-result__img-wrapper">
-          <img src={imageSrc} aria-hidden className="match-result__img" />
+          <img src={logoSrc} aria-hidden className="match-result__img" />
           <p className="match-result__score">{`${percentage}%`}</p>
         </div>
       </button>
@@ -34,6 +32,7 @@ export const MatchButton = (props: IMatchButtonProps) => {
         closeModal={() => {
           setIsModalOpen(false);
         }}
+        {...props}
       />
     </>
   );

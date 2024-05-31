@@ -14,7 +14,7 @@ export const CandidateIntroHeader = (
     <div className="candidate-header">
       <div>
         <p className="subtitle m-0">{t("electionName")}</p>
-        <h1 className="heading-1-larger m-0">{candidate.name}</h1>
+        <h1 className="heading-1-large m-0">{candidate.name}</h1>
       </div>
       {candidate.organization ||
         (candidate.creator && (

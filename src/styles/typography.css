@@ -1,14 +1,14 @@
+.heading-1-large {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--heading-primary);
+}
+
 .heading-1 {
   font-size: 28px;
   color: var(--heading-primary);
   line-height: 130%;
   font-weight: 900;
-}
-
-.heading-1-larger {
-  font-size: 32px;
-  font-weight: 700;
-  color: var(--heading-primary);
 }
 
 .heading-3 {

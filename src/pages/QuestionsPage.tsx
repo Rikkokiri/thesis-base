@@ -25,7 +25,7 @@ export const QuestionsPage = () => {
           {t("questionPage.findYourCandidate")}
         </h1>
         <p className="page-intro">{t("questionPage.description")}</p>
-        <div ref={questionsStartRef} />
+
         <Button
           iconBefore={<FiArrowDown />}
           onClick={() => {
@@ -37,6 +37,7 @@ export const QuestionsPage = () => {
         >
           {t("questionPage.findYourCandidate")}
         </Button>
+        <div ref={questionsStartRef} />
       </section>
       <div className="question-page__content" ref={ref}>
         <QuestionForm />

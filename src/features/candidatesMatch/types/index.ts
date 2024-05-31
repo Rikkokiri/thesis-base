@@ -2,7 +2,10 @@ import { Candidate } from "@data/candidates";
 
 export type AnswerValuesRecord = Record<number, number | undefined>;
 
-export type MatchWithDetails = Pick<Candidate, "id" | "name" | "logoSrc"> & {
+export type MatchWithDetails = Pick<
+  Candidate,
+  "id" | "name" | "logoSrc" | "brandColor" | "number"
+> & {
   rank: number;
-  score: number;
+  percentage: number;
 };

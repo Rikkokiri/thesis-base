@@ -2,26 +2,21 @@ import { Button } from "@components/Button/Button";
 import "./Modal.css";
 import { useEffect, useRef } from "react";
 import { FiX } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 
 interface IModalProps {
   isOpen: boolean;
   closeModal: () => void;
-  // onClose: () => void;
   children: React.ReactNode;
 }
 
 export const Modal = ({ isOpen, closeModal, children }: IModalProps) => {
   const ref = useRef<HTMLDialogElement | null>(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
-    /**
-     * Alert if clicked on outside of element
-     */
+    // Detect click outside of the modal
     function handleClickOutside(event: MouseEvent) {
-      /* if (ref.current && !ref.current.contains(event.target as Node)) {
-        console.log("Clicked outside modal");
-        ref.current.close();
-      } */
       const rect = ref?.current?.getBoundingClientRect();
       if (
         rect &&
@@ -33,6 +28,7 @@ export const Modal = ({ isOpen, closeModal, children }: IModalProps) => {
         handleClosing();
       }
     }
+
     // Bind the event listener
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
@@ -50,29 +46,23 @@ export const Modal = ({ isOpen, closeModal, children }: IModalProps) => {
     if (isOpen) {
       console.log("show modal");
       ref.current?.showModal();
-      // document.body.classList.add("modal-open"); // prevent bg scroll
     } else {
-      // ref.current?.close();
       handleClosing();
-      // document.body.classList.remove("modal-open");
     }
   }, [isOpen, ref]);
 
   return (
     <dialog ref={ref} className="modal" onCancel={closeModal}>
-      <div className="modal__content">
-        <div className="modal__body">{children}</div>
-
-        <Button
-          onClick={() => closeModal()}
-          iconBefore={<FiX />}
-          iconSize={24}
-          className="modal__close"
-          variant="ghost"
-          size="icon-only"
-          aria-label="Close modal"
-        ></Button>
-      </div>
+      <Button
+        onClick={() => closeModal()}
+        iconBefore={<FiX />}
+        iconSize={24}
+        className="modal__close"
+        variant="ghost"
+        size="icon-only"
+        aria-label={t("closeModal")}
+      ></Button>
+      <div className="modal__content">{children}</div>
     </dialog>
   );
 };

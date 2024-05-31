@@ -10,8 +10,12 @@ import { MatchWithDetails } from "../types";
 export const CandidatesMatchBar = (
   props: ReturnType<typeof useCandidatesMatch>,
 ) => {
-  const { topFourCandidates, topCount } = props;
+  const { topFourCandidates, topCount, displayMatches } = props;
   const [resultsHidden, setResultsHidden] = useState<boolean>(false);
+
+  if (!displayMatches) {
+    return null;
+  }
 
   return (
     <header className="match-bar">
@@ -21,17 +25,9 @@ export const CandidatesMatchBar = (
             ? [...Array(topCount).keys()].map((index) => (
                 <MatchPlaceholder key={index} />
               ))
-            : topFourCandidates.map(
-                (candidate: MatchWithDetails, index: number) => (
-                  <MatchButton
-                    rank={index + 1}
-                    key={candidate.id}
-                    candidateName={candidate.name}
-                    percentage={candidate.score}
-                    imageSrc={candidate.logoSrc}
-                  />
-                ),
-              )}
+            : topFourCandidates.map((candidate: MatchWithDetails) => (
+                <MatchButton candidate={candidate} key={candidate.id} />
+              ))}
         </div>
         <ToggleButton
           isToggled={resultsHidden}
