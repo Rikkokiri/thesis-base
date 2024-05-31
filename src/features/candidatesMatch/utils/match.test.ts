@@ -30,7 +30,7 @@ describe("matchPercentage", () => {
       4: 5,
     };
     const candidate = user;
-    expect(matchPercentage(user, candidate)).toBe(1);
+    expect(matchPercentage(user, candidate)).toBe(100);
   });
 
   test("candidate not answering a question that candidate has answered affects match score", () => {
@@ -51,7 +51,7 @@ describe("matchPercentage", () => {
       ...shared,
       5: undefined, // If candidate did not answer => 0.8
     };
-    const expectedMatch = 0.83;
+    const expectedMatch = 83;
 
     const user2 = {
       ...user,
@@ -68,11 +68,11 @@ describe("matchPercentage", () => {
       1: 1,
       5: 5,
     };
-    const user4Match = 0.67;
+    const user4Match = 67;
 
     expect(matchPercentage(user, candidate)).toBe(expectedMatch);
     expect(matchPercentage(user2, candidate)).toBe(expectedMatch);
-    expect(matchPercentage(user3, candidate)).toBe(1);
+    expect(matchPercentage(user3, candidate)).toBe(100);
     expect(matchPercentage(user4, candidate)).toBe(user4Match);
   });
 
@@ -88,7 +88,7 @@ describe("matchPercentage", () => {
       3: 4,
     };
 
-    expect(matchPercentage(user, candidate)).toBe(0.92);
+    expect(matchPercentage(user, candidate)).toBe(92);
   });
 
   describe("case 2 of candidate not answering a question that candidate has answered", () => {
@@ -110,7 +110,7 @@ describe("matchPercentage", () => {
     test.each(userCases)(
       "user answer %o, candidate answer undefined",
       (userAnswers) => {
-        expect(matchPercentage(userAnswers, candidate)).toBe(0.75);
+        expect(matchPercentage(userAnswers, candidate)).toBe(75);
       },
     );
   });
