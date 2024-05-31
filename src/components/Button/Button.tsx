@@ -1,7 +1,7 @@
 import "./Button.css";
 
 export type ButtonVariant = "solid" | "outline" | "ghost";
-export type ButtonSize = "small" | "medium";
+export type ButtonSize = "small" | "medium" | "icon-only";
 type ButtonIconSize = 20 | 24;
 
 export interface ISharedButtonProps {

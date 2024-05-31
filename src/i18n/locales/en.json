@@ -6,9 +6,11 @@
     "strongDisagree": "Completely disagree"
   },
   "appName": "Vaalikone",
-  "candidateDetails": {
+  "candidate": {
     "creator": "Creator",
+    "getToKnow": "Get to know the candidate",
     "github": "Github",
+    "number": "No.",
     "website": "Library website"
   },
   "candidateSections": {

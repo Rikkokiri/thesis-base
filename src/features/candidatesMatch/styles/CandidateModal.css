@@ -1,0 +1,14 @@
+.candidate-modal__body {
+  display: flex;
+  width: 100%;
+}
+
+.candidate-modal__actions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  padding-top: 32px; /* TODO: Use a variable */
+}

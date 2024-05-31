@@ -20,7 +20,7 @@ export const BackgroundDetailsGrid = (props: IBackgroundDetailsProps) => {
     <InfoGrid>
       <InfoGridRow>
         <InfoGridItem className="body-bold">
-          {t("candidateDetails.website")}
+          {t("candidate.website")}
         </InfoGridItem>
         <InfoGridItem>
           <a href={candidate.website?.url}>
