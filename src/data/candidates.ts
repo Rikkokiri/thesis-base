@@ -11,7 +11,6 @@ export type Candidate = {
   number: number;
   logoSrc: string;
   brandColor: string;
-  candidateNumber?: number;
   creator: string;
   organization?: string;
   numberOfComponents?: number;

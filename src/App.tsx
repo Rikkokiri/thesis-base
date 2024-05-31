@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import { Toolbar } from "./components/Toolbar/Toolbar";
 import { useDetectTheme } from "@hooks/useDetectTheme";
 import { useEffect } from "react";
+import { Footer } from "@components/Footer/Footer";
 
 function App() {
   const { prefersDarkMode, setActiveTheme } = useDetectTheme();
@@ -12,10 +13,12 @@ function App() {
   return (
     <>
       <Toolbar />
-      <main>
-        <Outlet />
-      </main>
-      <footer></footer>
+      <div className="main-wrapper">
+        <main>
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

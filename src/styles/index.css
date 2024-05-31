@@ -31,12 +31,17 @@ body {
   height: 100%;
 }
 
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - var(--toolbar-height));
+}
+
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex: 1 1 auto;
+  place-items: center flex-start;
+  flex: 1 0 auto;
 }
 
 h1 {

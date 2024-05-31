@@ -19,11 +19,12 @@ export const CandidateIntroHeader = (
       {candidate.organization ||
         (candidate.creator && (
           <p className="candidate-header__organization m-0">
-            By {candidate.organization || candidate.creator}
+            {t("candidate.createdBy")}{" "}
+            {candidate.organization || candidate.creator}
           </p>
         ))}
       <div className="candidate-number">
-        No: {candidate.candidateNumber ?? "?"}
+        {t("candidate.number")} {candidate.number}
       </div>
     </div>
   );
