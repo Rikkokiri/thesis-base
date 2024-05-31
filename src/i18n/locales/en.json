@@ -7,6 +7,7 @@
   },
   "appName": "Vaalikone",
   "candidate": {
+    "createdBy": "By",
     "creator": "Creator",
     "getToKnow": "Get to know the candidate",
     "github": "Github",
@@ -19,6 +20,7 @@
     "electionPromises": "Election promises"
   },
   "candidates": "Candidates",
+  "closeModal": "Close modal",
   "electionName": "2024 Component Library Election",
   "frontPage": {
     "start": "Start",
@@ -51,6 +53,5 @@
     "title": "Share the election compass"
   },
   "showFewer": "Show fewer",
-  "showMore": "Show more",
-  "closeModal": "Close modal"
+  "showMore": "Show more"
 }
