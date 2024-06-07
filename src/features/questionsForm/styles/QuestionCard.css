@@ -4,13 +4,13 @@
   align-items: center;
   background-color: var(--card-bg);
   margin-bottom: 1.5rem;
-  padding: 5rem 1.5rem; /* TODO: Use variable */
+  padding: 5rem 1.5rem;
   border-radius: var(--border-radius-sm);
   max-width: 680px;
 }
 
 .card__header {
-  gap: 1.5rem; /* TODO: Use variable */
+  gap: 1.5rem;
 }
 
 .category {
@@ -34,10 +34,10 @@
 }
 
 .answer__buttons {
-  gap: 24px; /* TODO: Use variable */
+  gap: 24px;
   margin-top: 40px;
 }
 
 .answer__radio {
-  padding-top: 8px; /* TODO: Use variable */
+  padding-top: 8px;
 }
