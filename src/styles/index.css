@@ -26,6 +26,13 @@ body {
   background-color: var(--bg-primary);
 }
 
+a,
+a:visited,
+a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
 #root {
   height: 100%;
 }
